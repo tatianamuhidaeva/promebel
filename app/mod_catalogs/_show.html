@@ -1,21 +1,26 @@
 <main id="main">
-    <section class="reviews" id="reviews">
+    <section class="category" id="category">
       <div class="container">
         {{breadcrumbs}}
-        <div class="reviews-row">
-          <h2 class="reviews__title section__title">{.title}</h2>
+        <div class="category-row">
+          <h2 class="category__title section__title">{.title}</h2>
        
         </div>
-        <div class="reviews__items">
-          {{one_review}}
-          {{one_review}}
-          {{one_review}}
-          {{one_review}}
-          {{one_review}}
-          {{one_review}}
-  
-          <div class="reviews-btn">
-            <button class="reviews__btn btn btn--o">Показать больше</button>
+        <div class="category__items">
+            {{one_category}}
+            <!-- {{one_category}}
+            {{one_category}}
+            {{one_category}}
+            {{one_category}}
+            {{one_category}}
+            {{one_category}} -->
+          <div class="category-look-more">
+            <button class="category-look-more__btn btn btn--o">
+              Показать больше
+              <span class="category-look-more__note">
+                (Показано 12 из 54)
+              </span>
+            </button>
           </div>
         </div>
   

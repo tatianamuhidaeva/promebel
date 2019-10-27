@@ -2,7 +2,7 @@
 
  
 	define('DB_HOST','localhost:8889');
-	define('DB_NAME','doit_advantmebel');
+	define('DB_NAME','doit_promebel');
 	define('DB_USER','root');
 	define('DB_PASSWORD','root');
  

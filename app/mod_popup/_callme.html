@@ -1,34 +1,52 @@
 <div class="popup">
-    <div class="popup-wrap popup-form">
-      <h2 class="page__subtitle">Заказать звонок</h2>
-      <div class="popup__form-wrap">
-        <div class="popup__close popup__close-form">&#215;</div>
-        {{form 'popup_form', 'action' => '/ajax/form1', 'id' => 'form_callback_id', 'ajax' => true, 'class' => 'popup__form'}}
-          {{input 'check', 'style' => 'display: none;', 'value' => '', 'id' => 'slider_form_check'}}
-          <div class="popup__input-wrap">
-          <div>
-            {{input 'name', 'id' => 'popup__name', 'class' => 'popup__input input', 'placeholder'=>'Ваше имя'}}
-            </div>
-          </div>
-          <div class="popup__input-wrap">
-            <div>
-              {{input 'phone', 'id' => 'popup__phone', 'class' => 'popup__input input', 'placeholder'=>'Ваш телефон','type'=>'tel'}}
-            </div>
-          </div>
-  
-          <button type="submit" class="popup__btn btn">Перезвоните мне</button>
-        {{/form}}
+  <div class="popup-wrap popup-form">
+    <h2 class="popup__title">Оставьте свой отзыв</h2>
+    <div class="popup__close popup__close-form">&#215;</div>
+    <div class="popup__form-wrap">
+      {{form 'popup_form', 'action' => '/ajax/form1', 'id' => 'form_callback_id', 'enctype' => "multipart/form-data", 'class' => 'popup__form'}}
+      {{input 'check', 'style' => 'display: none;', 'value' => '', 'id' => 'slider_form_check'}}
+      <div class="popup__input-wrap">
+        <div>
+          <label for="popup__name">Ваше имя</label>
+        </div>
+        <div>
+          {{input 'name', 'id' => 'popup__name', 'class' => 'popup__input input'}}
+        </div>
       </div>
-      <div class="popup__warning">
-        Нажимая на кнопку “Перзвоните мне”, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности.
+      <div class="popup__input-wrap">
+        <div>
+          <label for="popup__files">Изображение</label>
+        </div>
+        <div>
+          <input type="file" name="data[files]" id="popup__files" multiple accept="image/jpeg,image/png">
+        </div>
       </div>
+      <div class="popup__input-wrap">
+        <div>
+          <label for="popup__review">Отзыв</label>
+        </div>
+        <div>
+          {{textarea 'review', 'id' => 'popup__review', 'class' => 'popup__textarea textarea'}}
+        </div>
+      </div>
+      <div class="popup__input-wrap">
+        <div></div>
+        <div>
+          <button type="submit" class="popup__btn btn">Отправить</button>
+        </div>
+      {{/form}}
     </div>
-    <div class="popup-wrap popup-success">
-        <div class="popup__close popup__close-success">&#215;</div>
-      <h2 class="page__subtitle">
-          Спасибо!
-          <br>Мы перезвоним Вам
-          <br>в ближайшее время!
-      </h2>
-    </div>
-  </div> 
+    <!-- <div class="popup__warning">
+      Нажимая на кнопку “Перзвоните мне”, вы даете согласие на обработку персональных данных и соглашаетесь c политикой
+      конфиденциальности.
+    </div> -->
+  </div>
+  <div class="popup-wrap popup-success">
+    <div class="popup__close popup__close-success">&#215;</div>
+    <h2 class="page__subtitle">
+      Спасибо!
+      <br>Мы перезвоним Вам
+      <br>в ближайшее время!
+    </h2>
+  </div>
+</div>

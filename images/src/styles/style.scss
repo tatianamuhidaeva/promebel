@@ -32,6 +32,11 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; font-weight: inherit;}
 
 img {max-width: 100%;}
 
+figure{
+  padding: 0;
+  margin: 0;
+}
+
 a { color: inherit; text-decoration: none;transition-duration: 0.2s; }
 a:hover {
   filter: brightness(85%);
@@ -98,7 +103,7 @@ main{
     padding-left: 18px;
   }
 }
-*[class$='paragraph']{
+p{
   font-size: 27px;
   line-height: 1.5;
   @media (max-width: $xlg) {
@@ -237,6 +242,7 @@ main{
 }
 // components
 @import "components/forms.scss";
+@import "components/popup.scss";
 @import "components/breadcrumbs.scss";
 // Layouts
 @import "layouts/header.scss";
@@ -249,4 +255,7 @@ main{
 @import "layouts/promo.scss";
 @import "layouts/error.scss";
 @import "layouts/reviews.scss";
+@import "layouts/catalogs.scss";
+@import "layouts/contacts.scss";
+@import "layouts/category.scss";
 

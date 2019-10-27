@@ -1,4 +1,4 @@
-window.addEventListener('load', function () {
+$(document).ready(function () {
   var indexPortfolioSlider = new Swiper('#portfolio-slider', {
     slidesPerView: 2,
     centeredSlides: true,
@@ -82,5 +82,8 @@ window.addEventListener('load', function () {
   
   var reviewsItemHeight = $('.reviews__item').css('height');
   $('.reviews__item').css('height', reviewsItemHeight);
+  
+  var categoryItemHeight = $('.category__item').css('height');
+  $('.category__item').css('height', categoryItemHeight);
 
 })
