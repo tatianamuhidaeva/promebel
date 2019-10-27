@@ -1,0 +1,62 @@
+{
+	"build": {
+	    "html": "images/",
+	    "js": "images/js/",
+		"css": "images/css",
+		"imgBase": "images/src/images/",
+	    "img": "images/images/",
+	    "fonts": "images/fonts/",
+	    "sprites": "images/"
+	},
+	"src": {
+	    "html": "images/src/html/*.html",
+	    "js": {
+	    	"separate": "images/src/js/separate/*.js",
+	    	"libs": "images/src/js/libs/*.js",
+	    	"plugins": "images/src/js/plugins/*.js",
+	    	"components": "images/src/js/components/*.js"
+	    },
+	    "styleBase": "images/src/styles/",
+	    "style": "images/src/styles/style.scss",
+	    "imgBase": "images/src/images/",
+	    "img": [
+	    	"images/src/images/static/*.{png,jpg,svg,gif}",
+	    	"images/src/images/nofollow/*.{png,jpg,svg,gif}",
+	    	"images/src/images/content/*.{png,jpg,svg,gif}"
+	    ],
+	    "sprite": {
+	    	"svg": "images/src/sprite/svg/*.svg",
+	    	"png": "images/src/sprite/png/*.png"
+	    },
+	    "fonts": "images/src/fonts/**/*.*"
+	},
+	"watch": {
+	    "html": "images/src/html/**/*.html",
+	    "js": {
+	    	"separate": "images/src/js/separate/*.js",
+	    	"components": "images/src/js/components/*.js",
+	    	"libs": "images/src/js/libs/*.js",
+	    	"plugins": "images/src/js/plugins/*.js"
+	    },
+	    "style": "images/src/styles/**/*.scss",
+	    "img": "images/src/images/**/*.*",
+	    "sprite": {
+	    	"svg": "images/src/images/sprite/svg/*.svg",
+	    	"png": "images/src/images/sprite/svg/*.png"
+	    },
+	    "fonts": "images/src/fonts/**/*.*"
+	},
+	"clean": "./build2",
+	"server": {
+		"server": {
+	        "baseDir": "./build2"
+		},
+		"tunnel": true,
+	    "notify": false,
+	    "open": true,
+	    "cors": true,
+	    "ui": false,
+	    "host": "localhost",
+	    "port": 3000
+	}
+}

@@ -1,0 +1,34 @@
+<div class="popup">
+    <div class="popup-wrap popup-form">
+      <h2 class="page__subtitle">Заказать звонок</h2>
+      <div class="popup__form-wrap">
+        <div class="popup__close popup__close-form">&#215;</div>
+        {{form 'popup_form', 'action' => '/ajax/form1', 'id' => 'form_callback_id', 'ajax' => true, 'class' => 'popup__form'}}
+          {{input 'check', 'style' => 'display: none;', 'value' => '', 'id' => 'slider_form_check'}}
+          <div class="popup__input-wrap">
+          <div>
+            {{input 'name', 'id' => 'popup__name', 'class' => 'popup__input input', 'placeholder'=>'Ваше имя'}}
+            </div>
+          </div>
+          <div class="popup__input-wrap">
+            <div>
+              {{input 'phone', 'id' => 'popup__phone', 'class' => 'popup__input input', 'placeholder'=>'Ваш телефон','type'=>'tel'}}
+            </div>
+          </div>
+  
+          <button type="submit" class="popup__btn btn">Перезвоните мне</button>
+        {{/form}}
+      </div>
+      <div class="popup__warning">
+        Нажимая на кнопку “Перзвоните мне”, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности.
+      </div>
+    </div>
+    <div class="popup-wrap popup-success">
+        <div class="popup__close popup__close-success">&#215;</div>
+      <h2 class="page__subtitle">
+          Спасибо!
+          <br>Мы перезвоним Вам
+          <br>в ближайшее время!
+      </h2>
+    </div>
+  </div> 

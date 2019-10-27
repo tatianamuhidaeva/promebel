@@ -1,0 +1,173 @@
+<header class="header">
+  <section class="header-contacts">
+    <ul class="header-contacts-wrap container">
+      <li class="header-contacts__item header-contacts__item--time">
+          {Option.time_works}
+      </li>
+      <li class="header-contacts__item header-contacts__item--addr">
+          {Option.addr}
+      </li>
+      <li class="header-contacts__item header-contacts__item--insta">
+          <a href="https://{Option.insta}">{Option.insta}</a>
+      </li>
+      <li class="header-contacts__item header-contacts__item--vk">
+          <a href="https://{Option.vk}">{Option.vk}</a>
+      </li>
+    </ul>
+  </section>
+  <nav class="header-navbar">
+      <a class="header__logo" href="/"><img src="{Option.logo}" alt=""></a>
+      <ul class="header__menu">
+        <li class="header__menu-item header__menu-item--parent">
+          <a href="#">Услуги</a>
+          <ul class="header__menu-child">
+            <li class="header__menu-child-item"><a href="/services/1">Мебель под заказ</a></li>
+            <li class="header__menu-child-item"><a href="/services/2">Мебель из каталога</a></li>
+            <li class="header__menu-child-item"><a href="/services/3">Утилизация мебели</a></li>
+          </ul>
+        </li>
+        <li class="header__menu-item">
+          <a href="/catalogs">Каталог</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="/reviews">Отзывы</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="/delivery">Доставка</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="/contacts">Контакты</a>
+        </li>
+      </ul>
+      <ul class="header__catalog">
+        <li class="header__catalog-item">
+            <div class="header__catalog-toggle"></div>
+            <a href="#">
+              <span  class="header__catalog-item-text">Стулья</span>
+              <span class="header__catalog-item-img">
+                <svg>
+                  <use xlink:href="/images/sprite.svg#catalog-1"></use>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li class="header__catalog-item">
+            <a href="#">
+              <span  class="header__catalog-item-text">Стулья</span>
+              <span class="header__catalog-item-img">
+                  <svg>
+                    <use xlink:href="/images/sprite.svg#catalog-2"></use>
+                  </svg>
+                </span>
+            </a>
+          </li>
+          <li class="header__catalog-item">
+            <a href="#">
+              <span  class="header__catalog-item-text">Стулья</span>
+              <span class="header__catalog-item-img">
+                  <svg>
+                    <use xlink:href="/images/sprite.svg#catalog-3"></use>
+                  </svg>
+                </span>
+            </a>
+          </li>
+          <li class="header__catalog-item">
+            <a href="#">
+              <span  class="header__catalog-item-text">Стулья</span>
+              <span class="header__catalog-item-img">
+                  <svg>
+                    <use xlink:href="/images/sprite.svg#catalog-4"></use>
+                  </svg>
+                </span>
+            </a>
+          </li>
+          <li class="header__catalog-item">
+            <a href="#">
+              <span  class="header__catalog-item-text">Стулья</span>
+              <span class="header__catalog-item-img">
+                  <svg>
+                    <use xlink:href="/images/sprite.svg#catalog-5"></use>
+                  </svg>
+                </span>
+            </a>
+          </li>
+          <li class="header__catalog-item">
+            <a href="#">
+              <span  class="header__catalog-item-text">Стулья</span>
+              <span class="header__catalog-item-img">
+                  <svg>
+                    <use xlink:href="/images/sprite.svg#catalog-6"></use>
+                  </svg>
+                </span>
+            </a>
+          </li>
+          <li class="header__catalog-item">
+            <a href="#">
+              <span  class="header__catalog-item-text">Стулья</span>
+              <span class="header__catalog-item-img">
+                  <svg>
+                    <use xlink:href="/images/sprite.svg#catalog-7"></use>
+                  </svg>
+                </span>
+            </a>
+          </li>
+          <li class="header__catalog-item">
+            <a href="#">
+              <span  class="header__catalog-item-text">Стулья</span>
+              <span class="header__catalog-item-img">
+                  <svg>
+                    <use xlink:href="/images/sprite.svg#catalog-8"></use>
+                  </svg>
+                </span>
+            </a>
+          </li>
+          <li class="header__catalog-item">
+            <a href="#">
+              <span  class="header__catalog-item-text">Стулья</span>
+              <span class="header__catalog-item-img">
+                  <svg>
+                    <use xlink:href="/images/sprite.svg#catalog-9"></use>
+                  </svg>
+                </span>
+            </a>
+          </li>
+          <li class="header__catalog-item">
+            <a href="#">
+              <span  class="header__catalog-item-text">Стулья</span>
+              <span class="header__catalog-item-img">
+                  <svg>
+                    <use xlink:href="/images/sprite.svg#catalog-10"></use>
+                  </svg>
+                </span>
+            </a>
+          </li>
+          <li class="header__catalog-item">
+            <a href="#">
+              <span  class="header__catalog-item-text">Стулья</span>
+              <span class="header__catalog-item-img">
+                  <svg>
+                    <use xlink:href="/images/sprite.svg#catalog-11"></use>
+                  </svg>
+                </span>
+            </a>
+          </li>
+          <li class="header__catalog-item">
+            <a href="#">
+              <span  class="header__catalog-item-text">Стулья</span>
+              <span class="header__catalog-item-img">
+                  <svg>
+                    <use xlink:href="/images/sprite.svg#catalog-5"></use>
+                  </svg>
+                </span>
+            </a>
+          </li>
+        </ul>
+      <div class="header-r">
+      <a href="tel:+7<?=d()->convert_phone_clean(d()->Option->phone);?>" class="header__phone">+7{Option.phone} </a>
+      <form> 
+        <input  class="header__search" type="search" name="search" id="header__search" placeholder="Поиск по сайту...">
+      </form>
+    </div>
+
+  </nav>
+</header>

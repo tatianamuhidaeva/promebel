@@ -1,0 +1,9 @@
+<div class="news__item">
+  <div class="news__item-date">{.date_at|userdate}</div>
+  <div class="news__item-title">
+    <a href="/news/{.url}">{.title}</a>{{edit}}{{delete}}
+  </div>
+  <div class="news__item-text">
+    {.short_text}
+  </div>
+</div>

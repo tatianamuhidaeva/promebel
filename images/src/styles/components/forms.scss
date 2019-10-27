@@ -1,0 +1,47 @@
+.btn{
+  display: block;
+  height: 42px;
+  border-radius: 20px;
+  border: 1px solid $primary-color-2 ;
+  background-color: $primary-color-2 ;
+  color: #effeff;
+  font-family: $mainFont;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 2;
+  text-align: center;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  &:hover{
+    background-color: #effeff;
+    color: $primary-color-2;
+  }
+  @media (max-width: $xs){
+    border-radius: 13px;
+    height: 26px;
+    font-size: 13px;
+  }
+  @media (max-width: $xxs){
+    border-radius: 13px;
+    height: 26px;
+    font-size: 11px;
+  }
+  &--bigger{
+    height: 50px;
+    font-size: 22px;
+    @media (max-width: $xxs){
+      border-radius: 15px;
+      height: 31px;
+      font-size: 14px;
+    }
+  }
+  &--o{
+    
+    background-color: rgba(#fff, 0);
+    color: $primary-color-2;
+    &:hover{
+      color: #effeff;
+      background-color: $primary-color-2;
+    }
+  }
+}

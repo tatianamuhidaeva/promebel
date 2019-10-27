@@ -1,0 +1,55 @@
+<?php if (d()->Option->addr_map != '') { ?>
+	<div id = "contact_map" data-addr = "{Option.addr_map|h}"></div>
+	<script src = "https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<script>	
+		ymaps.ready(init);
+		function init () {
+			var myMap = new ymaps.Map('contact_map', {
+					center: [55.789117, 49.152623],
+					zoom: 16
+				});
+			var myGeocoder = ymaps.geocode($('#contact_map').data('addr'));
+			myGeocoder.then(
+				function (res) {
+					var lon = res.geoObjects.get(0).geometry._coordinates[0];
+					var lat = res.geoObjects.get(0).geometry._coordinates[1];
+					var myPlacemark = new ymaps.Placemark( [lon, lat], {
+						balloonContent: $('#contact_map').data('addr')
+					},{
+						iconLayout: 'default#image',
+						iconImageHref: '/images/img/geomark.png',
+						iconImageSize: [35, 49],
+						iconImageOffset: [-5, -38]
+					});
+					myMap.geoObjects.add(myPlacemark);
+					myMap.setCenter([lon, lat]);
+					myMap.setZoom(16);
+				}
+			);
+			var isMobile = {
+				Android: function() {
+					return navigator.userAgent.match(/Android/i);
+				},
+				BlackBerry: function() {
+					return navigator.userAgent.match(/BlackBerry/i);
+				},
+				iOS: function() {
+					return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+				},
+				Opera: function() {
+					return navigator.userAgent.match(/Opera Mini/i);
+				},
+				Windows: function() {
+					return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
+				},
+				any: function() {
+					return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+				}
+			};
+			myMap.behaviors.disable('scrollZoom');
+			if( isMobile.any() ) {
+				myMap.behaviors.disable('drag');
+			}
+		}
+	</script>
+<?php } ?>

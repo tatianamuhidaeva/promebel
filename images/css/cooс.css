@@ -1,0 +1,64 @@
+.nor_form {
+	margin: 0;
+	padding: 0;
+}
+.cook_foot {
+	position: fixed;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 18px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    -webkit-transition: -webkit-transform 0.15s linear;
+    transition: -webkit-transform 0.15s linear;
+    transition: transform 0.15s linear;
+    transition: transform 0.15s linear, -webkit-transform 0.15s linear;
+    z-index: 100;
+    font-family: Arial;
+	line-height: 1;
+}
+.cook_foot_1 {
+	float: left;
+	width: 95%;
+}
+.cook_foot_2 {
+	float: left;
+	width: 5%;
+	text-align: center;
+}
+.cook_a:hover {
+    color: #fff;
+}
+.cook_a {
+	text-decoration: none;
+    display: inline-block;
+    border: 2px solid #fff;
+    color: #fff;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    padding: 4px 8px;
+	margin-top: 6px;
+}
+
+@media (max-width: 767px) {
+	.cook_foot_1 {
+		float: none;
+		width: 100%;
+	}
+	.cook_foot_2 {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.cook_foot_1 {
+		float: left;
+		width: 90%;
+	}
+	.cook_foot_2 {
+		width: 10%;
+	}
+}

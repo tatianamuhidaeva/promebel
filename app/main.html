@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>{Seo.title}</title>
+	<meta name="description" content="{Seo.description}" />
+	<meta name="keywords" content="{Seo.keywords}" />
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no">
+
+	<link rel="stylesheet"
+		href="/images/css/style.css?<?= filemtime($_SERVER['DOCUMENT_ROOT'] . '/images/css/style.css') ?>">
+	<link rel="stylesheet" href="/images/css/cooс.css">
+
+	<!-- <script src="/images/js/jquery.maskedinput.min.js"></script> -->
+	<script src="/images/js/plugins.js?<?= filemtime($_SERVER['DOCUMENT_ROOT'] . '/images/js/plugins.js') ?>"></script>
+	<script src="/images/js/main.js?<?= filemtime($_SERVER['DOCUMENT_ROOT'] . '/images/js/main.js') ?>"></script>
+	{Option.meta}
+</head>
+
+<body>
+	{{admin_panel}}
+	<div class="page-root">
+
+		{{header}}
+		<div class="content">
+			{{{content}}}
+		</div>
+		{{footer}}
+	</div>
+	<?php if (!(isset($_COOKIE['_politika']) && $_COOKIE['_politika'] == 'agree')) { ?>
+	<div class="cook_foot">
+		{{form 'cook', 'action' => '/ajax/cook', 'ajax' => true, 'class' => 'nor_form', 'id' => 'cook_form'}}
+		<div class="cook_foot_1">
+			Продолжая использовать наш сайт, вы даете согласие на обработку файлов cookie, пользовательских данных (сведения о
+			местоположении; тип и версия ОС; тип и версия Браузера; тип устройства и разрешение его экрана; источник откуда
+			пришел на сайт пользователь; с какого сайта или по какой рекламе; язык ОС и Браузера; какие страницы открывает и
+			на какие кнопки нажимает пользователь; ip-адрес) в целях функционирования сайта, проведения ретаргетинга и
+			проведения статистических исследований и обзоров. Если вы не хотите, чтобы ваши данные обрабатывались, покиньте
+			сайт.
+		</div>
+		<div class="cook_foot_2">
+			<a href="#" onclick="$('#cook_form').submit(); return false;" class="cook_a">OK</a>
+		</div>
+		<div class="clear"></div>
+		{{/form}}
+	</div>
+	<?php } ?>
+	{Option.metric}
+</body>
+
+</html>

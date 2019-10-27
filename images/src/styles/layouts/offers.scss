@@ -1,0 +1,151 @@
+.offers {
+  padding-top: 197px;
+
+  &-slider {
+    &-wrapper {
+      position: relative;
+      margin-right: -23px;
+      margin-left: -23px;
+    }
+  }
+
+  &-slide {
+    padding: 23px;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dadada;
+    background-color: #ffffff;
+    transition-duration: 0.4s;
+
+
+    &-l1 {
+      line-height: 0;
+    }
+
+    &-img {
+      width: 100%;
+      height: 278px;
+      object-fit: cover;
+    }
+
+    &-l2 {
+      padding: 16px 30px 50px;
+    }
+
+    &-paragraph {
+      color: #3e3e3e;
+      // font-size: 27px;
+      // line-height: 1.5;
+      margin-bottom: 13px;
+    }
+
+    &--abs {
+      display: none;
+      background-color: #fff;
+      transition-duration: 0.4s;
+    }
+  }
+
+  &__item:hover {
+    box-shadow: 0 0 31px 5px rgba(0, 0, 0, 0.1);
+
+    .offers__item {
+      &--abs {
+        display: block;
+      }
+    }
+  }
+
+  &-arrow {
+    --swiper-navigation-size: 27;
+    --swiper-theme-color: #fff;
+    transform: translateY(-100%);
+    &--prev {
+      left: 33px;
+    }
+
+    &--next {
+      right: 33px;
+    }
+
+    &.swiper-button-disabled {
+      display: none;
+    }
+  }
+  &-pagination {
+    display: none;
+  }
+}
+
+@media (max-width: $xlg) {
+  .offers {
+    padding-top: 120px;
+
+    &__item-l2 {
+      padding: 10px 15px 20px;
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .offers {
+    &__item {
+      &-img {
+        height: 210px;
+      }
+
+      &:hover {
+        box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.1);
+      }
+    }
+    &-slider {
+      &-wrapper {
+        position: relative;
+        margin-right: -10px;
+        margin-left: -10px;
+      }
+    }
+    &-slide {
+      padding: 10px;
+    }
+  }
+}
+
+
+@media (max-width: $xs) {
+  .offers {
+    &-slide{
+      &.swiper-slide-active{
+        .offers__item{
+          box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.1);
+
+        .offers__item {
+          &--abs {
+            display: block;
+          }
+        }
+      }
+      }
+    }
+    &-pagination {
+      display: block;
+      bottom: -50px;
+      width: 100%;
+      .swiper-pagination-bullet{
+        width: 10px;
+        height: 10px;
+        opacity: 1;
+        margin: 0 5px;
+        background-color: #fff;
+        border: 1px solid #dadada;
+        &-active{
+          background-color: $primary-color-2;
+        }
+      }
+    }
+  }
+}

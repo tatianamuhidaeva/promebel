@@ -1,0 +1,43 @@
+<main id="main">
+  <section class="index-map">
+    <div class="container ">
+      {{breadcrumbs}}
+      <div class="index-map-wrap">
+        <div class="index-map-content">
+          <h2 class="section__title">{.title}</h2>
+          <p class="index-map__paragraph">
+            <strong>Телефон:</strong><a href="tel:+">+7 927 033 02 70</a>
+          </p>
+          <p class="index-map__paragraph">
+            <strong>Главный офис:</strong>
+            <address>420108, г.Казань,
+              ул. Ирек, 1.</address>
+          </p>
+          <p class="index-map__paragraph">
+            <strong>Instagram:</strong><a href="promebel_kazan">promebel_kazan</a>
+          </p>
+          <p class="index-map__paragraph">
+            <strong>Вконтакте:</strong><a href="vk.com/promebel_kazan">vk.com/promebel_kazan</a>
+          </p>
+
+        </div>
+        <div class="index-map__map">
+          {{map}}
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contacts-builds">
+    <div class="container">
+      <h2 class="reviews__title section__title">Адреса наших магазинов</h2>
+      <div class="reviews__items">
+        {{one_build}}
+        {{one_build}}
+        {{one_build}}
+        {{one_build}}
+        {{one_build}}
+      </div>
+    </div>
+  </section>
+  {{promo}}
+</main>

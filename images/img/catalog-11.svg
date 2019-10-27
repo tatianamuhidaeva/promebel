@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+</style>
+<g id="Wardrobe-2">
+	<path class="st0" d="M456,376h16v16h-16V376z"/>
+	<path class="st0" d="M440,400h32v16h-32V400z"/>
+	<path class="st0" d="M424,424h48v16h-48V424z"/>
+	<path class="st0" d="M64,224h16v32H64V224z"/>
+	<path class="st0" d="M128,224h16v32h-16V224z"/>
+	<path class="st0" d="M432,224h16v32h-16V224z"/>
+	<path class="st0" d="M368,224h16v32h-16V224z"/>
+	<path class="st0" d="M240,288h32v16h-32V288z"/>
+	<path class="st0" d="M240,352h32v16h-32V352z"/>
+	<path class="st0" d="M240,416h32v16h-32V416z"/>
+	<path class="st0" d="M248.4,74.4l11.3-11.3l29.2,29.2l-11.3,11.3L248.4,74.4z"/>
+	<path class="st0" d="M272.4,50.4l11.3-11.3l29.2,29.2l-11.3,11.3L272.4,50.4z"/>
+	<path class="st0" d="M472,16H40c-13.3,0-24,10.7-24,24v448c0,4.4,3.6,8,8,8h464c4.4,0,8-3.6,8-8V40C496,26.7,485.3,16,472,16z
+		 M480,40v408h-64V32h56C476.4,32,480,35.6,480,40z M192,272h128v48H192V272z M192,336h128v48H192V336z M320,256H192V32h128V256z
+		 M176,448h-64V32h64V448z M192,400h128v48H192V400z M336,32h64v416h-64V32z M40,32h56v416H32V40C32,35.6,35.6,32,40,32z M32,480
+		v-16h448v16H32z"/>
+</g>
+</svg>

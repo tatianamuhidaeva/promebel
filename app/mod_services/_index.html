@@ -1,0 +1,29 @@
+<div class="news page">
+  <div class="container bg">
+    <h1 class="page__title"><span>{.title}</span>
+      {{add 'news'}}
+    </h1>
+    {{breadcrumbs}}
+    <div class="news__list col-12 col-md-8 p-0">
+      <foreach News->order_by('date_at DESC')>
+        <div class="news__card">
+          <?if (d()->this->image != ''){?>
+          <div class="news__card-img">
+            <a href="/news/{.url}">
+              <img src="{{preview d()->this->image, 263, 'auto'}}" alt="">
+            </a>
+          </div>
+          <?}?>
+          <div class="news__card-info">
+            {{one_news}}
+          </div>
+        </div>
+      </foreach>
+      <?php if (d()->paginator != '') { ?>
+      <div class="news-paginator">
+        {paginator}
+      </div>
+      <?php } ?>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="newspage page">
+  <div class="container bg">
+    <h1 class="page__title col-12"><span>{.title} {{edit}}</span></h1>
+    {{breadcrumbs}}
+      <div class="newspage__img d-flex justify-content-center">
+            <img src="{.image}" alt="">
+      </div>
+      <div class="newspage-descr">
+        <h2 class="newspage__subtitle page__subtitle">{.date_at|userdate}</h2>
+        <div class="newspage__text page__text">{.text}</div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,157 @@
+.index-main{
+  height: 940px;
+  background: {
+    repeat: no-repeat;
+    color: #ffffff;
+    image:  url('../img/main-bg.png');
+    size: 1920px 940px;
+    position: 50% 0;
+  }
+  &-wrap{
+    display: flex;
+    height: 100%;
+  }
+  &-col-1{
+    flex: 1 1 47%;
+
+    padding-top: 292px;
+    // padding-bottom: 367px;
+
+    
+
+  }
+  &__title{
+    font-size: 67px;
+    font-weight: 600;
+    font-family: $demiFont;
+    line-height: 1.2;
+    color: #4f4d4d;
+  }
+
+  &-col-2{
+    flex: 1 1 53%;
+    margin-top: 118px;
+    margin-bottom: 220px;
+    position: relative;
+  }
+  &__img{
+    position: absolute;
+    &-1{
+      top: 50%;
+      left: 50%;
+      width: 56%;
+      height: auto;
+      transform: translate(-29%, -62%);
+    }
+    &-2{
+      left: 32px;
+      top: 0;
+      width: 22%;
+      height: auto;
+    }
+    &-3{
+      left: 0;
+      bottom: 0;
+      width: 29.6%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: $xxlg){
+  .index-main{
+    &__title{
+      font-size: 55px;
+    }
+  }
+}
+@media (max-width: $lg){
+  .index-main{
+    margin-top: 30px;
+    height: 634px;
+    background-size: auto 634px;
+    &__title{
+      font-size: 45px;
+    }
+    &-col-1{
+      padding-top: 200px;
+    }
+    &-col-2{
+      margin-bottom: 185px;
+    }
+  }
+}
+@media (max-width: $md){
+  .index-main{
+    margin-top: 28px;
+    &__title{
+      font-size: 34px;
+    }
+  }
+}
+@media (max-width: $sm){
+  .index-main{
+    margin-top: 49px;
+    height: 400px;
+    background-size: auto 400px;
+    &__title{
+      font-size: 28px;
+    }
+    &-col-1{
+      padding-top: 140px;
+    }
+    &-col-2{
+      margin-top: 50px;
+      margin-bottom: 80px;
+    }
+    &__img{
+      &-2{
+        left: 10px;
+      }
+    }
+  }
+}
+@media (max-width: $xs){
+  .index-main{
+    margin-top: 57px;
+    height: 300px;
+    background-size: auto 300px;
+    &__title{
+      font-size: 22px;
+    }
+    &-col-1{
+      padding-top: 90px;
+    }
+  }
+}
+@media (max-width: $xxs){
+  .index-main{
+    margin-top: 66px;
+    height: 220px;
+    background-size: auto 220px;
+    &__title{
+      font-size: 18px;
+    }
+    &-col-1{
+      flex: 1 1 60%;
+      padding-top:65px;
+    }
+    &-col-2{
+      flex: 1 1 40%;
+      margin-top: 40px;
+      // margin-bottom: 310px;
+    }
+    &__img{
+      &-1{
+        width: 60%;
+      }
+      &-2{
+        left: 5px;
+        width: 27%;
+      }
+      &-3{
+        width: 34px;
+      }
+    }
+  }
+}

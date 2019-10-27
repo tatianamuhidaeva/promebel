@@ -1,0 +1,9 @@
+.breadcrumbs{
+  margin-bottom: 42px;
+  font-size: 21px;
+
+  a:last-child{
+    color: $primary-color-1;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,148 @@
+.index-benefits {
+  padding-bottom: 99px;
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    padding-top: 56px;
+    padding-left: 32px;
+    padding-bottom: 66px;
+    position: relative;
+    width: 413px;
+    border-radius: 7px;
+    border: 1px solid $primary-color-1;
+
+    >strong {
+      color: $primary-color-2;
+      font-size: 50px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    >span {
+      display: block;
+      color: $primary-color-1;
+      font-size: 30px;
+    }
+
+    >img {
+      position: absolute;
+      z-index: 2;
+    }
+
+    &:nth-of-type(1) {
+      >img {
+        bottom: -100px;
+        right: -100px;
+      }
+    }
+
+    &:nth-of-type(2) {
+      margin-left: 20px;
+      margin-right: 20px;
+      >img {
+        bottom: -50px;
+        right: -60px;
+      }
+    }
+
+    &:nth-of-type(3) {
+      >img {
+        bottom: -70px;
+        right: 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: $xxlg) {
+  .index-benefits {
+  
+    &__item {
+      // padding-top: 56px;
+      // padding-left: 32px;
+      // width: 353px;
+      >img{
+        transform-origin: center;
+        transform: scale(0.8);
+      }
+    }
+  }
+}
+@media (max-width: $xlg) {
+  .index-benefits {
+  
+    &__item {
+      padding-top: 56px;
+      padding-left: 26px;
+      padding-bottom: 60px;
+      // width: 353px;
+      >strong {
+        font-size: 40px;
+      }
+      >span {
+        font-size: 25px;
+      }
+
+  
+    }
+  }
+}
+@media (max-width: $lg) {
+  .index-benefits {
+    &__items{
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    &__item {
+      margin-bottom: 30px;
+      &:nth-of-type(2) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}
+@media (max-width: $md) {
+  .index-benefits {
+    &__item {
+      padding-top: 27px;
+      padding-left: 20px;
+      padding-bottom: 28px;
+      // width: 353px;
+      >strong {
+        font-size: 24px;
+      }
+      >span {
+        font-size: 15px;
+      }
+
+  
+    }
+  }
+}
+@media (max-width: $xs) {
+  .index-benefits {
+    &__item {
+      &:nth-of-type(1) > img {
+        right: -80px;
+        bottom: -80px;
+        width: 80%;
+      }
+      &:nth-of-type(2) > img {
+        right: -60px;
+        bottom: -50px;
+        width: 55%;
+      }
+      &:nth-of-type(3) > img {
+        right: 0;
+        bottom: -70px;
+        transform-origin: right;
+        width: 50%;
+      }
+  
+    }
+  }
+}

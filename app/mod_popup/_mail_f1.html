@@ -1,0 +1,8 @@
+{form_title} с <?php print $_SERVER['HTTP_HOST']; ?>.<br>
+<?php if (d()->params['name'] != '') { ?>
+Имя: {params.name|h}<br>
+<?php } ?>
+<?php if (d()->params['phone'] != '') { ?>
+Телефон: {params.phone|h}<br>
+<?php } ?>
+

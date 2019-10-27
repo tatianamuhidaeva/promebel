@@ -1,0 +1,252 @@
+@import "base/fonts";
+@import "base/normalize";
+@import "helpers/vars";
+@import "helpers/mixins";
+@import "lib/swiper";
+@import "@fancyapps/fancybox/dist/jquery.fancybox";
+
+
+html {
+  line-height: $mainLineHeight;
+	font-size: $mainFontSize;
+	color: $text-color;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+	font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+strong {
+  font-weight: 600;
+}
+
+*, *::before, *::after { box-sizing: border-box;}
+
+h1, h2, h3, h4, h5, h6, p { margin: 0; font-weight: inherit;}
+
+img {max-width: 100%;}
+
+a { color: inherit; text-decoration: none;transition-duration: 0.2s; }
+a:hover {
+  filter: brightness(85%);
+}
+
+address {font-style: normal;}
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+main{
+  padding-top: 61px;
+}
+// section {
+//   position: relative;
+//   padding-top: 50px;
+//   padding-bottom: 100px;
+//   @media screen and (max-width: $lg) {
+//     padding-bottom: 68px;
+//   }
+//   @media screen and (max-width: $md) {
+//     padding-bottom: 60px;
+//   }
+//   @media screen and (max-width: $xs) {
+//     padding-bottom: 30px;
+//   }
+// }
+
+#wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 10% 0 17.4%;
+}
+
+.container-big {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 10% 0 5.6%;
+}
+.section__title{
+  border-left: 6px solid $primary-color-2;
+  color: $text-color;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 31px;
+  padding-left: 22px;
+  @media (max-width: $md) {
+    font-size: 26px;
+    margin-bottom: 45px;
+    padding-left: 20px;
+  }
+  @media (max-width: $xs) {
+    font-size: 20px;
+    margin-bottom: 40px;
+    padding-left: 18px;
+  }
+}
+*[class$='paragraph']{
+  font-size: 27px;
+  line-height: 1.5;
+  @media (max-width: $xlg) {
+    font-size: 24px;
+  }
+  @media (max-width: $lg) {
+    font-size: 22px;
+  }
+  @media (max-width: $md) {
+    font-size: 20px;
+  }
+  @media (max-width: $sm) {
+    font-size: 18px;
+  }
+  @media (max-width: $xs) {
+    font-size: 16px;
+  }
+}
+
+
+.d-none {
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+@media (max-width: $xxlg) {
+  .container {
+    padding: 0 5% 0 12%;
+  }
+}
+@media (max-width: $xlg) {  //default-wrap / 95%
+
+  .d-block-xlg {
+    display: block !important;
+  }
+
+  .d-inline-xlg {
+      display: inline !important;
+  }
+
+  .d-none-xlg {
+      display: none !important;
+  }
+}
+
+
+@media (max-width: $lg) {
+  .container {
+    padding: 0 5%;
+    padding-left: 60px;
+  }
+  .d-block-lg {
+      display: block !important;
+  }
+
+  .d-inline-lg {
+      display: inline !important;
+  }
+
+  .d-none-lg {
+      display: none !important;
+  }
+}
+@media (max-width: $md) {
+  .d-block-md {
+      display: block !important;
+  }
+
+  .d-inline-md {
+      display: inline !important;
+  }
+  .d-flex-md {
+    display: flex !important;
+}
+  .d-none-md {
+      display: none !important;
+  }
+}
+
+@media (max-width: $sm) {
+  .container{
+    padding: 0 5%;
+  }
+  .d-block-sm {
+      display: block !important;
+  }
+
+  .d-inline-sm {
+      display: inline !important;
+  }
+
+  .d-none-sm {
+      display: none !important;
+  }
+
+  .title-index {
+    font-size: 28px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: $xs) {
+  .d-block-xs {
+      display: block !important;
+  }
+  .d-flex-xs {
+      display: flex !important;
+  }
+
+  .d-inline-xs {
+      display: inline !important;
+  }
+
+  .d-none-xs {
+      display: none !important;
+  }
+
+  .title-index {
+    font-size: 21px;
+    text-align: center;
+  }
+  .title {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+// components
+@import "components/forms.scss";
+@import "components/breadcrumbs.scss";
+// Layouts
+@import "layouts/header.scss";
+@import "layouts/footer.scss";
+@import "layouts/index-main.scss";
+@import "layouts/index-benefits.scss";
+@import "layouts/portfolio.scss";
+@import "layouts/offers.scss";
+@import "layouts/index-map.scss";
+@import "layouts/promo.scss";
+@import "layouts/error.scss";
+@import "layouts/reviews.scss";
+

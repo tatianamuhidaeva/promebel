@@ -1,0 +1,10 @@
+<div class="breadcrumbs">
+    <?php 
+          foreach (d()->breadcrumbs as $key => $item) {
+            if ($key != 0){
+              echo " / ";
+            } 
+            print "<a href={$item[link]}>{$item[title]}</a>";
+          } 
+        ?>
+  </div>

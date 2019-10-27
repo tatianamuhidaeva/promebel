@@ -1,0 +1,27 @@
+.error{
+  padding-top: 245px;
+  padding-bottom: 188px;
+  &-wrapper{
+    margin: 0 auto;
+    width: 660px;
+
+  }
+  &-green{
+    padding: 27px 0;
+    background-color: $primary-color-1;
+
+    text-align: center;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 700;
+  }
+  &-main{
+    padding: 37px 0 56px;
+    background-color: #fff;
+  
+    text-align: center;
+    color:  $primary-color-1;
+    font-size: 51px;
+    font-weight: 700;
+  }
+}
