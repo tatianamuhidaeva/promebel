@@ -49,7 +49,7 @@
     "gulp-include": "^2.4.1",
     "jquery": "^3.4.1",
     "jquery-ui": "^1.12.1",
-    "swiper": "^5.1.0",
+    "swiper": "^6.5.1",
     "waypoints": "^4.0.1"
   }
 }
