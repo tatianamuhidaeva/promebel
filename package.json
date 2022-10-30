@@ -14,7 +14,7 @@
   "devDependencies": {
     "@fancyapps/fancybox": "^3.5.2",
     "autoprefixer": "^8.0.0",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "del": "^5.1.0",
     "fancybox": "^3.0.1",
     "gulp": "^3.9.1",
